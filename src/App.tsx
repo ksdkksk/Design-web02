@@ -5,10 +5,7 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-import smartisanT3 from './assets/img/smartisan_t3.png';
-import work1 from './assets/img/work1.jpg';
-import cup1 from './assets/video/cup1.mp4';
-import flowerRender from './assets/video/flower_render.mp4';
+// Static assets are in /public/img and /public/video
 
 const SECTIONS = [
   { id: 'home', labelKey: 'index' },
@@ -99,28 +96,28 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: smartisanT3, 
+    image: "img/smartisan_t3.png", 
     description: "Industrial design concept for the T-series flagship."
   },
   {
     title: "GUERLAIN ROUGE",
     category: "VISUAL CRAFT",
     year: "2023",
-    image: work1, 
+    image: "img/work1.jpg", 
     description: "Exploration of premium leather textures and silk dynamics."
   },
   {
     title: "COFFEE CRAFT",
     category: "MOTION FILM",
     year: "2024",
-    image: cup1, 
+    image: "video/cup1.mp4", 
     description: "Cinematic exploration of ceramic textures and organic fluid dynamics."
   },
   {
     title: "FLORAL DYNAMICS",
     category: "PROCEDURAL ART",
     year: "2024",
-    image: flowerRender, 
+    image: "video/flower_render.mp4", 
     description: "Computational study of botanical growth and organic form."
   }
 ];
