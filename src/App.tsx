@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useScroll, useSpring } from 'motion/react';
+import { motion, useScroll, useSpring } from 'motion/react';
 import { 
-  ArrowUpRight, 
-  Mail, 
-  Github, 
-  Twitter, 
-  Instagram, 
-  Cpu, 
-  Layers, 
-  Box, 
-  ExternalLink 
+  ArrowUpRight 
 } from 'lucide-react';
 
 // Asset imports
