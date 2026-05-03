@@ -101,7 +101,7 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: "/images/Samrtisan-T3-40000 main.png", 
+    image: "/images/smartisan_t3.png", 
     description: "Industrial design concept for the T-series flagship."
   },
   {
