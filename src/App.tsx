@@ -101,28 +101,28 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: "/images/smartisan_t3.png", 
+    image: "images/smartisan_t3.png", 
     description: "Industrial design concept for the T-series flagship."
   },
   {
     title: "GUERLAIN ROUGE",
     category: "VISUAL CRAFT",
     year: "2023",
-    image: "/images/work1.jpg", 
+    image: "images/work1.jpg", 
     description: "Exploration of premium leather textures and silk dynamics."
   },
   {
     title: "COFFEE CRAFT",
     category: "MOTION FILM",
     year: "2024",
-    image: "/images/cup1.mp4", 
+    image: "images/cup1.mp4", 
     description: "Cinematic exploration of ceramic textures and organic fluid dynamics."
   },
   {
     title: "FLORAL DYNAMICS",
     category: "PROCEDURAL ART",
     year: "2024",
-    image: "/images/flower_render.mp4", 
+    image: "images/flower_render.mp4", 
     description: "Computational study of botanical growth and organic form."
   }
 ];
@@ -351,12 +351,13 @@ export default function App() {
               transition={{ delay: i * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="group relative aspect-video overflow-hidden glass-panel rounded-2xl"
             >
-              {project.image.endsWith('.mp4') ? (
+              {project.image.toLowerCase().endsWith('.mp4') ? (
                 <video 
                   src={project.image} 
                   loop 
                   muted 
                   playsInline
+                  preload="auto"
                   onMouseEnter={(e) => {
                     const video = e.currentTarget;
                     video.play().catch(err => console.log("Video play interrupted", err));
