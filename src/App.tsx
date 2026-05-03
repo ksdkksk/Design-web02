@@ -101,28 +101,28 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: "images/smartisan_t3.png", 
+    image: "img/smartisan_t3.png", 
     description: "Industrial design concept for the T-series flagship."
   },
   {
     title: "GUERLAIN ROUGE",
     category: "VISUAL CRAFT",
     year: "2023",
-    image: "images/work1.jpg", 
+    image: "img/work1.jpg", 
     description: "Exploration of premium leather textures and silk dynamics."
   },
   {
     title: "COFFEE CRAFT",
     category: "MOTION FILM",
     year: "2024",
-    image: "images/cup1.mp4", 
+    image: "video/cup1.mp4", 
     description: "Cinematic exploration of ceramic textures and organic fluid dynamics."
   },
   {
     title: "FLORAL DYNAMICS",
     category: "PROCEDURAL ART",
     year: "2024",
-    image: "images/flower_render.mp4", 
+    image: "video/flower_render.mp4", 
     description: "Computational study of botanical growth and organic form."
   }
 ];
