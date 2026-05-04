@@ -5,7 +5,14 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-// All assets are served from the public folder (/public/img and /public/video)
+import smartisanT3Img from './assets/img/Samrtisan-T3-40000 main.png';
+import guerlainImg from './assets/img/guerlain30000_.png';
+import cup1 from './assets/video/cup1.mp4';
+import flowerRender from './assets/video/3.16flower.karmarendersettings.mp4';
+
+// Map assets to constants
+const smartisanT3 = smartisanT3Img;
+const work1 = guerlainImg;
 
 const SECTIONS = [
   { id: 'home', labelKey: 'index' },
@@ -96,28 +103,28 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: `${import.meta.env.BASE_URL}img/smartisan_t3.png`, 
+    image: smartisanT3, 
     description: "Industrial design concept for the T-series flagship."
   },
   {
     title: "GUERLAIN ROUGE",
     category: "VISUAL CRAFT",
     year: "2023",
-    image: `${import.meta.env.BASE_URL}img/work1.jpg`, 
+    image: work1, 
     description: "Exploration of premium leather textures and silk dynamics."
   },
   {
     title: "COFFEE CRAFT",
     category: "MOTION FILM",
     year: "2024",
-    image: `${import.meta.env.BASE_URL}video/cup1.mp4`, 
+    image: cup1, 
     description: "Cinematic exploration of ceramic textures and organic fluid dynamics."
   },
   {
     title: "FLORAL DYNAMICS",
     category: "PROCEDURAL ART",
     year: "2024",
-    image: `${import.meta.env.BASE_URL}video/flower_render.mp4`, 
+    image: flowerRender, 
     description: "Computational study of botanical growth and organic form."
   }
 ];
