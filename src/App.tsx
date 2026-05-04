@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-const smartisanT3Img = '/img/Samrtisan-T3-40000 main.png';
+const smartisanT3Img = '/img/Samrtisan-T3-40000-main.png';
 const guerlainImg = '/img/guerlain30000_.png';
 const cup1 = '/video/cup1.mp4';
 const flowerRender = '/video/3.16flower.karmarendersettings.mp4';
