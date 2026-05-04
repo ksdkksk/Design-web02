@@ -6,9 +6,9 @@ import {
 
 // Asset imports
 const smartisanT3Img = 'https://res-console.cloudinary.com/dsfod3eol/thumbnails/v1/image/upload/v1777878288/U2FtcnRpc2FuLVQzLTQwMDAwX21haW5fYmdsaGc0/drilldown';
-const guerlainImg = 'https://res-console.cloudinary.com/dsfod3eol/thumbnails/v1/image/upload/v1777878674/R3VlcmxhaW40Lk1haW5fZ3p2ZWV3/drilldown';
-const cup1 = '/video/cup1.mp4';
-const flowerRender = '/video/3.16flower.karmarendersettings.mp4';
+const guerlainImg = 'https://res-console.cloudinary.com/dsfod3eol/thumbnails/v1/image/upload/v1777879931/Z3VlcmxhaW4zMDAwX19vb2wzemE=/drilldown';
+const cup1 = 'https://res.cloudinary.com/dsfod3eol/video/upload/cup1_c6uqw9.mp4?_s=vp-3.7.2';
+const flowerRender = 'https://res.cloudinary.com/dsfod3eol/video/upload/3.16flower.karmarendersettings_sz7y8f.mp4?_s=vp-3.7.2';
 
 const SECTIONS = [
   { id: 'home', labelKey: 'index' },
@@ -349,32 +349,41 @@ export default function App() {
               transition={{ delay: i * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="group relative aspect-video overflow-hidden glass-panel rounded-2xl"
             >
-              {project.image.toLowerCase().endsWith('.mp4') ? (
-                <video 
-                  src={project.image} 
-                  loop 
-                  muted 
-                  playsInline
-                  preload="auto"
-                  onMouseEnter={(e) => {
-                    const video = e.currentTarget;
-                    video.play().catch(err => console.log("Video play interrupted", err));
-                  }}
-                  onMouseLeave={(e) => {
-                    const video = e.currentTarget;
-                    video.pause();
-                    video.currentTime = 0;
-                  }}
-                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100 pointer-events-auto"
-                />
-              ) : (
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100"
-                  referrerPolicy="no-referrer"
-                />
-              )}
+              {(() => {
+                const isVideo = /\.(mp4|webm|ogg|mov)(\?.*)?$/i.test(project.image) || 
+                              project.image.toLowerCase().includes('/video/') ||
+                              project.image.toLowerCase().includes('video/upload');
+                if (isVideo) {
+                  return (
+                    <video 
+                      key={project.image}
+                      loop 
+                      muted 
+                      playsInline
+                      onMouseEnter={(e) => {
+                        const video = e.currentTarget;
+                        video.play().catch(err => console.log("Video play interrupted", err));
+                      }}
+                      onMouseLeave={(e) => {
+                        const video = e.currentTarget;
+                        video.pause();
+                        video.currentTime = 0;
+                      }}
+                      className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100 pointer-events-auto"
+                    >
+                      <source src={project.image} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  );
+                }
+                return (
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100"
+                  />
+                );
+              })()}
               <div className="absolute inset-0 p-8 flex flex-col justify-between pointer-events-none bg-gradient-to-t from-black/60 via-transparent to-black/30">
                 <div className="flex justify-between items-start">
                   <span className="mono-label text-white/70">{project.category}</span>
