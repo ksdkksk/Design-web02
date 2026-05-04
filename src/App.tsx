@@ -5,8 +5,8 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-const smartisanT3 = '/img/Samrtisan-T3-40000 main.png';
-const work1 = '/img/guerlain30000_.png';
+const smartisanT3Img = '/img/Samrtisan-T3-40000 main.png';
+const guerlainImg = '/img/guerlain30000_.png';
 const cup1 = '/video/cup1.mp4';
 const flowerRender = '/video/3.16flower.karmarendersettings.mp4';
 
@@ -99,14 +99,14 @@ const PROJECTS = [
     title: "SMARTISAN T3",
     category: "PRODUCT DESIGN",
     year: "2024",
-    image: smartisanT3, 
+    image: smartisanT3Img, 
     description: "Industrial design concept for the T-series flagship."
   },
   {
     title: "GUERLAIN ROUGE",
     category: "VISUAL CRAFT",
     year: "2023",
-    image: work1, 
+    image: guerlainImg, 
     description: "Exploration of premium leather textures and silk dynamics."
   },
   {
