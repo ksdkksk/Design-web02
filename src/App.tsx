@@ -365,13 +365,13 @@ export default function App() {
                     video.pause();
                     video.currentTime = 0;
                   }}
-                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-40 group-hover:opacity-100 pointer-events-auto"
+                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100 pointer-events-auto"
                 />
               ) : (
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-40 group-hover:opacity-100"
+                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0 opacity-100"
                   referrerPolicy="no-referrer"
                 />
               )}
@@ -409,7 +409,7 @@ export default function App() {
                   <img 
                     src="https://picsum.photos/seed/designer/800/1200" 
                     alt="Profile"
-                    className="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-700"
+                    className="w-full h-full object-cover grayscale opacity-100 transition-opacity duration-700"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-brand-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
