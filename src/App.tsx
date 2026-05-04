@@ -5,14 +5,10 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-import smartisanT3Img from './assets/img/Samrtisan-T3-40000 main.png';
-import guerlainImg from './assets/img/guerlain30000_.png';
-import cup1 from './assets/video/cup1.mp4';
-import flowerRender from './assets/video/3.16flower.karmarendersettings.mp4';
-
-// Map assets to constants
-const smartisanT3 = smartisanT3Img;
-const work1 = guerlainImg;
+const smartisanT3 = '/img/Samrtisan-T3-40000 main.png';
+const work1 = '/img/guerlain30000_.png';
+const cup1 = '/video/cup1.mp4';
+const flowerRender = '/video/3.16flower.karmarendersettings.mp4';
 
 const SECTIONS = [
   { id: 'home', labelKey: 'index' },
