@@ -5,8 +5,8 @@ import {
 } from 'lucide-react';
 
 // Asset imports
-const smartisanT3Img = 'https://res-console.cloudinary.com/dsfod3eol/thumbnails/v1/image/upload/v1777878288/U2FtcnRpc2FuLVQzLTQwMDAwX21haW5fYmdsaGc0/drilldown';
-const guerlainImg = 'https://res-console.cloudinary.com/dsfod3eol/thumbnails/v1/image/upload/v1777879931/Z3VlcmxhaW4zMDAwX19vb2wzemE=/drilldown';
+const smartisanT3Img = 'https://res.cloudinary.com/dsfod3eol/image/upload/v1777878288/Samrtisan-T3-40000_main_bglhg4.png';
+const guerlainImg = 'https://res.cloudinary.com/dsfod3eol/image/upload/v1777879931/guerlain3000__ool3za.png';
 const cup1 = 'https://res.cloudinary.com/dsfod3eol/video/upload/cup1_c6uqw9.mp4?_s=vp-3.7.2';
 const flowerRender = 'https://res.cloudinary.com/dsfod3eol/video/upload/3.16flower.karmarendersettings_sz7y8f.mp4?_s=vp-3.7.2';
 
